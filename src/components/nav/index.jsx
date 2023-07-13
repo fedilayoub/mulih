@@ -2,8 +2,8 @@ import React from "react";
 
 const Nav = () => {
   return (
-    <nav className="bg-white border-gray-200 dark:bg-gray-900">
-      <div className="max-w-screen-xl flex flex-wrap items-center justify-around mx-auto p-4">
+    <nav className="bg-transparent border-gray-200 dark:bg-gray-900 z-10">
+      <div className="flex flex-wrap items-center justify-around py-4">
         <a href="/" className="flex items-center">
           <img src="/mulih.svg" className="h-10 w-10 mr-1" alt="Mulih Logo" />
           <span className="text-2xl text-primary font-medium leading-6 tracking-wider">
@@ -35,7 +35,7 @@ const Nav = () => {
           </svg>
         </button>
         <div className="hidden align-items  w-full md:block md:w-auto" id="navbar-default">
-          <ul className="text-lg text-grey flex flex-col p-4 md:p-0 gap-10 rounded-lg md:flex-row md:border-0 md:bg-white items-center">
+          <ul className="text-lg text-grey flex flex-col p-4 md:p-0 gap-10 rounded-lg md:flex-row md:border-0 items-center">
             <li>
               <a
                 href="#"
