@@ -14,7 +14,8 @@ export default {
       primary: '#4BA586',
       'primary-light': '#69B99D',
       grey: "#8E8E8E",
-      white: "#FFFFFF",
+      "grey-light": "#F5F5F5",
+      white: "#FEFEFF",
     },
     fontFamily: {
       poppins: ['Poppins', 'sans-serif'],
