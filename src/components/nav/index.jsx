@@ -2,8 +2,8 @@ import React from "react";
 
 const Nav = () => {
   return (
-    <nav className="bg-transparent border-gray-200 dark:bg-gray-900 z-10">
-      <div className="flex flex-wrap items-center justify-around py-4">
+    <nav>
+      <div className="flex items-center justify-between py-4 z-20">
         <a href="/" className="flex items-center">
           <img src="/mulih.svg" className="h-10 w-10 mr-1" alt="Mulih Logo" />
           <span className="text-2xl text-primary font-medium leading-6 tracking-wider">
@@ -34,59 +34,83 @@ const Nav = () => {
             />
           </svg>
         </button>
-        <div className="hidden align-items  w-full md:block md:w-auto" id="navbar-default">
-          <ul className="text-lg text-grey flex flex-col p-4 md:p-0 gap-10 rounded-lg md:flex-row md:border-0 items-center">
-            <li>
+        <div
+          className="hidden align-items  w-full md:block md:w-auto"
+          id="navbar-default"
+        >
+          <ul className="text-lg text-grey flex flex-col p-4 md:p-0  rounded-lg md:flex-row md:border-0 items-center">
+            <li className="group flex flex-col items-center">
               <a
                 href="#"
-                className="block py-2 pl-3 pr-4 hover:text-primary"
+                className="block py-2 pl-3 pr-4 hover:text-primary group-hover:-translate-y-1 group-hover:py-0 ease-in duration-200"
                 aria-current="page"
               >
                 Home
-              </a>
+              </a>{" "}
+              <span className="text-primary-light hidden group-hover:block text-4xl leading-[0] font-bold">
+                .
+              </span>
             </li>
-            <li>
+            <li className="group flex flex-col items-center">
               <a
                 href="#"
-                className="block py-2 pl-3 pr-4 hover:text-primary"
+                className="block py-2 pl-3 pr-4 hover:text-primary group-hover:-translate-y-1 group-hover:py-0 ease-in duration-200"
               >
                 Property
               </a>
+              <span className="text-primary-light hidden group-hover:block text-4xl leading-[0] font-bold">
+                .
+              </span>
             </li>
-            <li>
+            <li className="group flex flex-col items-center">
               <a
                 href="#"
-                className="block py-2 pl-3 pr-4 hover:text-primary"
+                className="block py-2 pl-3 pr-4 hover:text-primary group-hover:-translate-y-1 group-hover:py-0 ease-in duration-200"
               >
                 About
               </a>
+              <span className="text-primary-light hidden group-hover:block text-4xl leading-[0] font-bold">
+                .
+              </span>
             </li>
-            <li>
+            <li className="group flex flex-col items-center">
               <a
                 href="#"
-                className="block py-2 pl-3 pr-4 hover:text-primary"
+                className="block py-2 pl-3 pr-4 hover:text-primary group-hover:-translate-y-1 group-hover:py-0 ease-in duration-200"
               >
                 Service
               </a>
+              <span className="text-primary-light hidden group-hover:block text-4xl leading-[0] font-bold">
+                .
+              </span>
             </li>
-            <li>
+            <li className="group flex flex-col items-center">
               <a
                 href="#"
-                className="block py-2 pl-3 pr-4 hover:text-primary"
+                className="block py-2 pl-3 pr-4 hover:text-primary group-hover:-translate-y-1 group-hover:py-0 ease-in duration-200"
               >
                 Contact
               </a>
+              <span className="text-primary-light hidden group-hover:block text-4xl leading-[0] font-bold">
+                .
+              </span>
             </li>
           </ul>
         </div>
-        <div className=" hidden md:flex align-items">
-            <a href="/" className="px-[48px] pt-[16px] pb-[15px] text-primary-light mr-[8px] font-medium">
-              Sign in
-            </a>
-            <a href="/" className="px-[48px] pt-[16px] pb-[15px] text-white bg-primary-light font-medium">
-              Login
-            </a>
-          </div>
+        <div className="hidden md:flex ">
+          <a
+            href="/"
+            className="px-[48px] pt-[16px] pb-[15px] text-primary-light mr-[8px] font-medium"
+          >
+            Sign in
+          </a>
+          <a
+            href="/"
+            className="px-[48px] pt-[16px] pb-[15px] text-white bg-primary-light font-medium"
+          >
+            Login
+          </a>
+        </div>
       </div>
     </nav>
   );
