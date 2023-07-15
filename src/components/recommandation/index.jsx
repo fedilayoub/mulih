@@ -1,48 +1,47 @@
 import React from "react";
 import Card from "../card";
-import img1 from "../../assets/images/pic1.webp"
-import img2 from "../../assets/images/pic2.webp"
-import img3 from "../../assets/images/pic3.webp"
-
+import img1 from "../../assets/images/pic1.webp";
+import img2 from "../../assets/images/pic2.webp";
+import img3 from "../../assets/images/pic3.webp";
 
 const Recommandation = () => {
-    const realEstateProperties = [
-        {
-          image: {
-            src: img1,
-            alt: "Property Image 1",
-          },
-          title: "Stunning Villa",
-          location: "Sunnyville",
-          price: 850000,
-          surface: 300,
-        },
-        {
-          image: {
-            src: img2,
-            alt: "Property Image 2",
-          },
-          title: "Cozy Apartment",
-          location: "City Center",
-          price: 320000,
-          surface: 120,
-        },
-        {
-          image: {
-            src: img3,
-            alt: "Property Image 3",
-          },
-          title: "Spacious Townhouse",
-          location: "Suburbia",
-          price: 500000,
-          surface: 200,
-        },
-      ];
-      
+  const realEstateProperties = [
+    {
+      image: {
+        src: img1,
+        alt: "Property Image 1",
+      },
+      title: "Stunning Villa",
+      location: "Sunnyville",
+      price: 850000,
+      surface: 300,
+    },
+    {
+      image: {
+        src: img2,
+        alt: "Property Image 2",
+      },
+      title: "Cozy Apartment",
+      location: "City Center",
+      price: 320000,
+      surface: 120,
+    },
+    {
+      image: {
+        src: img3,
+        alt: "Property Image 3",
+      },
+      title: "Spacious Townhouse",
+      location: "Suburbia",
+      price: 500000,
+      surface: 200,
+    },
+  ];
+
   return (
     <section className="px-10 md:px-32 md:py-[7.5rem] mb-[15rem] xl:mb-0 flex flex-col h-screen bg-white">
       <span className="px-[24px] py-[12px] mb-[1rem] bg-grey-light uppercase text-primary-light w-fit">
-        real estate
+        Discover{" "}
       </span>
       <h2 className="text-3xl md:text-5xl font-bold mb-[1rem]">
         Best recomendation
