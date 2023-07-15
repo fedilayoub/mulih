@@ -7,8 +7,7 @@ const Advantages = () => {
     <section className="px-10 md:px-32 h-fit py-[5rem] bg-[#F5F5F5]">
       <div className="flex flex-col items-start">
         <span className="px-[24px] py-[12px] mb-[32px] bg-white uppercase text-primary-light">
-          {" "}
-          real estate
+          Our advantages
         </span>
         <h2 className="text-3xl md:text-5xl font-bold mb-[1rem]">
           Giving you the peace of mind
