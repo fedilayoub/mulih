@@ -39,14 +39,14 @@ const Recommandation = () => {
   ];
 
   return (
-    <section className="px-10 md:px-32 md:py-[7.5rem] mb-[15rem] xl:mb-0 flex flex-col h-screen bg-white">
+    <section className="px-10 md:px-32 py-[5rem] md:pt-[7.5rem] xl:py-[7.5rem] xl:mb-0 flex flex-col h-fit bg-white">
       <span className="px-[24px] py-[12px] mb-[1rem] bg-grey-light uppercase text-primary-light w-fit">
         Discover{" "}
       </span>
-      <h2 className="text-3xl md:text-5xl font-bold mb-[1rem]">
-        Best recomendation
+      <h2 className="text-3xl md:text-5xl font-bold mb-[1rem] text-[#054457]">
+        Best recommandation
       </h2>
-      <div className="flex justify-between items-center mb-[3rem]">
+      <div className="flex flex-col gap-2 justify-start md:gap-0 md:flex-row md:justify-between items-center mb-[3rem]">
         <p className="text-sm text-grey">
           Discover our exclusive selection of the finest one-of-a-kind <br />{" "}
           luxury properties architectural masterpieces.
@@ -61,15 +61,15 @@ const Recommandation = () => {
             fill="none"
           >
             <path
-              fill-rule="evenodd"
-              clip-rule="evenodd"
+              fillRule="evenodd"
+              clipRule="evenodd"
               d="M22.0001 12C22.0001 17.52 17.5101 22 12.0001 22L11.7204 21.9962C6.32954 21.8478 2.00012 17.4264 2.00012 12C2.00012 6.49 6.48012 2 12.0001 2C17.5101 2 22.0001 6.49 22.0001 12ZM10.0201 8C9.73012 8.3 9.73012 8.77 10.0301 9.06L12.9801 12L10.0301 14.94C9.73012 15.23 9.73012 15.71 10.0201 16C10.3201 16.3 10.7901 16.3 11.0801 16L14.5701 12.53C14.7101 12.39 14.7901 12.2 14.7901 12C14.7901 11.8 14.7101 11.61 14.5701 11.47L11.0801 8C10.9401 7.85 10.7501 7.78 10.5601 7.78C10.3601 7.78 10.1701 7.85 10.0201 8Z"
               fill="#69B99D"
             />
           </svg>
         </button>
       </div>
-      <div className="flex gap-[2.12rem] mb-[8rem]">
+      <div className="grid grid-cols-1 md:grid-cols-3 gap-[2.12rem]">
         {realEstateProperties.map((property) => (
           <Card key={property.title} {...property} />
         ))}

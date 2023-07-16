@@ -18,7 +18,7 @@ const Testimonials = () => {
     },
     {
       image: {
-        src: avatar2,
+        src: avatar3,
         alt: "Testimonial 2",
       },
       name: "Alfredo Donin",
@@ -29,7 +29,7 @@ const Testimonials = () => {
     },
     {
       image: {
-        src: avatar3,
+        src: avatar2,
         alt: "Testimonial 3",
       },
       name: "Makenna Korsgaard",
@@ -41,14 +41,14 @@ const Testimonials = () => {
   ];
 
   return (
-    <section className="px-10 md:px-32 md:py-[7.5rem] mb-[15rem] xl:mb-0 flex flex-col h-screen bg-white">
+    <section className="px-10 md:px-32 pb-[7.5rem] md:mb-[15rem] xl:mb-0 flex flex-col h-fit bg-white">
       <span className="px-[24px] py-[12px] mb-[1rem] bg-grey-light uppercase text-primary-light w-fit">
         CUSTOMER TESTIMONIAL{" "}
       </span>
 
-      <div className="flex justify-between items-center mb-[3rem]">
+      <div className="flex flex-col gap-2 justify-start md:gap-0 md:flex-row md:justify-between items-center mb-[3rem]">
         <h2 className="text-3xl text-[#054457] md:text-5xl font-bold mb-[1rem]">
-          What people are saying <br /> about us{" "}
+          What people are saying <br className="hidden md:block"/> about us{" "}
         </h2>{" "}
         <button className="flex items-center gap-2 px-[24px] py-[12px] bg-[#FEFEFF] text-primary-light">
           Learn more
@@ -60,15 +60,15 @@ const Testimonials = () => {
             fill="none"
           >
             <path
-              fill-rule="evenodd"
-              clip-rule="evenodd"
+              fillRule="evenodd"
+              clipRule="evenodd"
               d="M22.0001 12C22.0001 17.52 17.5101 22 12.0001 22L11.7204 21.9962C6.32954 21.8478 2.00012 17.4264 2.00012 12C2.00012 6.49 6.48012 2 12.0001 2C17.5101 2 22.0001 6.49 22.0001 12ZM10.0201 8C9.73012 8.3 9.73012 8.77 10.0301 9.06L12.9801 12L10.0301 14.94C9.73012 15.23 9.73012 15.71 10.0201 16C10.3201 16.3 10.7901 16.3 11.0801 16L14.5701 12.53C14.7101 12.39 14.7901 12.2 14.7901 12C14.7901 11.8 14.7101 11.61 14.5701 11.47L11.0801 8C10.9401 7.85 10.7501 7.78 10.5601 7.78C10.3601 7.78 10.1701 7.85 10.0201 8Z"
               fill="#69B99D"
             />
           </svg>
         </button>
       </div>
-      <div className="grid grid-cols-1 md:grid-cols-3 gap-[2rem]">
+      <div className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-[2rem]">
         {testimonials.map((testimonial) => (
           <div
             className="border border-1 border-[#DEDCDA] p-6 flex flex-col"
