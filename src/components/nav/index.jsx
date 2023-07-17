@@ -36,7 +36,7 @@ const Nav = () => {
             </svg>
           </button>
           <div
-            className="hidden align-items  w-full md:block md:w-auto"
+            className="hidden w-full md:block md:w-auto"
             id="navbar-default"
           >
             <ul className="text-lg text-grey flex flex-col p-4 md:p-0  rounded-lg md:flex-row md:border-0 items-center">

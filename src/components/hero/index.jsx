@@ -12,7 +12,7 @@ const Hero = () => {
         src={heroImg}
         alt="Home Image"
       />
-      <div className=" mt-10 md:mt-0 xl:pt-44  flex flex-col items-start h-full md:w-[70%] xl:w-[50%]">
+      <div className=" pt-10 md:pt-0 md:mt-0 xl:pt-44  flex flex-col items-start h-full md:w-[70%] xl:w-[50%]">
         <span className="px-[24px] py-[12px] mb-[32px] bg-white uppercase text-primary-light">
           {" "}
           real estate
