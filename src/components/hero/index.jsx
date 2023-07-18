@@ -34,7 +34,7 @@ const Hero = () => {
             </button>
           </div>
           <div className="flex flex-col md:flex-row justify-start items-center p-[32px] bg-[#FEFEFF] gap-[2.5rem] shadow-[35px_35px_65px_0px_rgba(146,106,120,0.16)]">
-            <div className="flex flex-col">
+            <div className="flex flex-col w-full">
               <label htmlFor="locations" className="text-sm">
                 Location
               </label>
@@ -49,7 +49,7 @@ const Hero = () => {
                 <option value="location4">Bogor, Jawa Barat</option>
               </select>
             </div>
-            <div className="flex flex-col">
+            <div className="flex flex-col w-full">
               <label htmlFor="type" className="text-sm">
                 Type
               </label>
@@ -66,7 +66,7 @@ const Hero = () => {
                 <option value="Shop">Shop</option>
               </select>
             </div>
-            <div className="flex flex-col">
+            <div className="flex flex-col w-full">
               <label htmlFor="price range" className="text-sm">
                 Price Range
               </label>
