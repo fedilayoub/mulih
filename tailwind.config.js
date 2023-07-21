@@ -17,9 +17,6 @@ export default {
       "grey-light": "#F5F5F5",
       white: "#FEFEFF",
     },
-    fontFamily: {
-      poppins: ['Poppins', 'sans-serif'],
-    }
   },
   plugins: [],
 }
